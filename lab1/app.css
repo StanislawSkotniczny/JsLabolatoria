@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+    background: linear-gradient(135deg, #72c2ff, #0048ff); 
+}
+
+#container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+}
+
+
+
+.deleteButton, #addButton, #calculateButton {
+    cursor: pointer;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 5px;
+    transition: background-color 0.3s; 
+}
+
+.deleteButton:hover, #addButton:hover, #calculateButton:hover {
+    background-color: #0056b3; 
+}
+
+.deleteButton {
+    background-color: #ff4d4d;
+}
+
+.deleteButton:hover {
+    background-color: #cc0000; 
+}
+
+.inputWrapper {
+    display: flex; 
+    align-items: center; 
+}
+
+.valueInput {
+    flex-grow: 1;
+    margin-right: 10px; 
+    padding: 10px 15px;
+    border: 2px solid #007bff; 
+    border-radius: 20px; 
+    outline: none; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.valueInput:focus {
+    border-color: #0056b3;
+    background-color: white; 
+}
+
+
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white; 
+    border-radius: 10px; 
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}

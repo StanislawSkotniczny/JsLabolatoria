@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dokument</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <input type="text" id="value1" placeholder="wartość 1">
-    <br><br>
-    <input type="text" id="value2" placeholder="wartość 2">
-    <br><br>
-    <input type="text" id="value3" placeholder="wartość 3">
-    <br><br>
-    <input type="text" id="value4" placeholder="wartość 4">
-    <br><br>
-    <button onclick="Oblicz()">Przelicz</button>
-    <br>
-    <div id="result"></div>
+    <div id  ="container">
+        <div id="fieldsContainer">
+            <div class="inputWrapper">
+                <input type="text" class="valueInput" placeholder="wartość 1">
+                <button class="deleteButton">Usuń</button>
+            </div>
+            <div class="inputWrapper">
+                <input type="text" class="valueInput" placeholder="wartość 2">
+                <button class="deleteButton">Usuń</button>
+            </div>
+            <div class="inputWrapper">
+                <input type="text" class="valueInput" placeholder="wartość 3">
+                <button class="deleteButton">Usuń</button>
+            </div>
+        </div>
+        <div>
+            <button id="addButton">Dodaj pole</button>
+            <button id="calculateButton">Przelicz</button>
+            <br>
+        </div>
+        
+        <div id="result"></div>
+    </div>
+    
 
     <script src="main.js"></script>
 </body>
