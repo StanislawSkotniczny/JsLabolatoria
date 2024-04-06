@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drumkit</title>
+</head>
+<body>
+    <div>
+        <button id="recordBtn">Start/Stop Recording</button>
+        <select id="channelSelect">
+            <option value="0">Channel 1</option>
+            <option value="1">Channel 2</option>
+            <option value="2">Channel 3</option>
+            <option value="3">Channel 4</option>
+        </select>
+        <button id="playBtn">Play Selected</button>
+        <button id="metronomeBtn">Metronome On/Off</button>
+        <input type="number" id="bpm" value="120" /> BPM
+        <div>
+            <label><input type="checkbox" class="channelCheckbox" value="0" checked /> Channel 1</label>
+            <label><input type="checkbox" class="channelCheckbox" value="1" checked /> Channel 2</label>
+            <label><input type="checkbox" class="channelCheckbox" value="2" checked /> Channel 3</label>
+            <label><input type="checkbox" class="channelCheckbox" value="3" checked /> Channel 4</label>
+        </div>
+        <div>
+            <audio src="./sounds/hihat.wav" controls id="clap" data-key="a"></audio>
+            <audio src="./sounds/clap.wav" controls id="boom" data-key="s"></audio>
+            <audio src="./sounds/snare.wav" controls id="hihat" data-key="d"></audio>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
